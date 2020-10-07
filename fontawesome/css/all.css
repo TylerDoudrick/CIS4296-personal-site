@@ -16,6 +16,16 @@
   text-rendering: auto;
   line-height: 1; }
 
+
+
+
+
+.jumbotron{
+    background-image: url("images/cautionStriped.jxr");
+    background-size: cover;
+}
+
+
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,9 +8,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <script defer src="fontawesome/js/all.min.js"></script>
+
+    <script defer src="fontawesome/js/brands.js"></script>
+    <script defer src="fontawesome/js/brands.min.js"></script>
+
+    <script defer src="fontawesome/js/fontawesome.js"></script>
+    <script defer src="fontawesome/js/fontawesome.min.js"></script>
+
+    <script defer src="fontawesome/js/regular.js"></script>
+    <script defer src="fontawesome/js/regular.min.js"></script>
+
+    <script defer src="fontawesome/js/solid.js"></script>
+    <script defer src="fontawesome/js/solid.min.js"></script>
+
+    <script defer src="fontawesome/js/v4-shims.js"></script>
+    <script defer src="fontawesome/js/v4-shims.min.js"></script>
+
+
+    <title>Jacob Enos</title>
     <style>
         html,
         body {
@@ -35,12 +55,11 @@
             border: 2px solid black;
             opacity: 0.5;
             transition: 0.3s;
-
         }
 
-        .btn-outline:hover {
-            opacity: 1;
-        }
+            .btn-outline:hover {
+                opacity: 1;
+            }
 
         .lang {
             height: 60px;
@@ -51,9 +70,9 @@
             font-size: 65px;
         }
 
-        .contacticon a {
-            color: rgb(33, 37, 41);
-        }
+            .contacticon a {
+                color: rgb(33, 37, 41);
+            }
 
         .course {
             margin: 0 10px;
@@ -66,201 +85,320 @@
             align-items: center;
         }
 
-        .course h5 {
-            margin: 0;
-        }
+            .course h5 {
+                margin: 0;
+            }
 
         .next {
             font-size: 65px;
         }
 
-        .next a {
-            color: rgb(33, 37, 41);
-        }
+            .next a {
+                color: rgb(33, 37, 41);
+            }
     </style>
+
+
+    <script src="fontawesome/js/custom.js"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+
+
+<body style="background-color:lightgray">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        .btn {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 48px;
+        }
+    </style>
+
+    <nav id="NavBar" class="navbar navbar-expand-lg navbar-dark text-white fixed-top border border-dark" style="background-color:darkgreen">
+        <a class="navbar-brand" href="#landing"> Jacob Enos<span class="sr-only"> (current)</span> </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#projects"> Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" href="#courses"> Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact"> Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
+
+
+
+    <div class="jumbotron text-center text-white" style="background-image: url('images/cautionStripes.jpg'); background-size: cover">
+        <img src="images/coneSmall.jpg" />
+        <h1> <b> Work In Progress</b> </h1>
+    </div>
+
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" style="background-color:lightgray" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center"> Hello, I'm Jacob!</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
-                University.</h5>
+            <h5 class="display-5 mx-auto faded text-center">
+                I'm an Information Science & Technology Student at Temple
+                University.
+            </h5>
         </div>
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
+            <div class="col my-3">
+                <img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Python" / >
+            </div>
 
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
+            <div class="col my-3">
+                <img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
+                     data-placement="top" title="TypeScript" / >
+            </div>
 
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
+            <div class="col my-3">
+                <img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="C#" / >
+            </div>
+            <div class="col my-3">
+                <img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Node.js" / >
+            </div>
+            <div class="col my-3">
+                <img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Java" / >
+            </div>
+
+            <div class="col my-3">
+                <img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="ASP.NET" / >
+            </div>
+            <div class="col my-3">
+                <img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Microsoft SQL Server" / >
+            </div> <div class="col my-3"> </div>
 
         </div>
         <div class="row my-4">
             <div class="col">
-                <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
+                <a href="#projects"> <button type="button" class="btn btn-outline"> Projects</button> </a>
             </div>
             <div class="col">
-                <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
+                <a href="#courses"> <button type="button" class="btn btn-outline"> Courses</button> </a>
             </div>
             <div class="col">
-                <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
+                <a href="#contact"> <button type="button" class="btn btn-outline"> Contact</button> </a>
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+            <a href="#projects" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Projects"></i>
+            </a>
+        </div>
 
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center"> Academic Projects</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+            <h5 class="display-5 mx-auto faded text-center mb-4"> I've helped to build some cool things while at Temple.</h5>
         </div>
         <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+            <h5> CST E-Course Evaluation Tracker</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
                 in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
                 sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
                 tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
                 purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
+                faucibus libero.
+            </p>
         </div>
         <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+            <h5> PA Watershed Level Tracker </h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
+            <p class="text-justify">
+                Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
                 finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
                 sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta.
+            </p>
         </div>
         <div class="row w-100">
-            <h5>Query Dating Site</h5>
+            <h5> Resaraunt Ordering Station Program </h5>
         </div>
         <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
+            <p class="text-justify">
+                Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
                 egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
                 tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
                 amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
                 Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
+                efficitur at.
+            </p>
         </div>
-        <div class="row mt-5 next">
-            <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
-    </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
-        </div>
-        <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Server-Side Web Application Development</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Network Architectures</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Client-Side Scripting</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Component-Based Software Design</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Database Management Systems</h5>
-            </div>
-        </div>
-        <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
-    </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
-        </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
-        </div>
-        <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
-                    data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
-                    data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
-                    data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
+
+
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center"> Personal Projects</h4>
+            </div>
+            <div class="row w-100">
+                <p /><h5> Water Feature Thing</h5>
+                <div class="progress">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    Just a little woodworking/plumbing/electrical project I have, it's almost done. Water gets pumped
+                    from the lower resevoir to the upper resevoir, overflows, falls back to the bottom resevoir and repeats.
+                    A table top peice will be placed on top. The shaft poking out the top will slowly spin the table top.
+                </p>
+                <img class="mx-auto shadow-lg rounded" src="images/stand1Tiny.jpg">
+            </div>
+
+            <p />
+
+            <div class="row w-100">
+                <h5> Loans.exe</h5>
+            </div>
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    A while ago I wanted a personal coding project to work on, one that would be useful to me in the end as well.
+                    I ended up making this budgeting program. Given a certain salary, US state of residence, and a few other personal parameters
+                    the program will calculate how long the loan/expense will take to pay off. The program acccounts for state and federal tax,
+                    including adjusting for tax brackets, and allows users to add more secondary expenses to track similateously.
+                </p>
+
+            </div>
+
+
+            <div class="col-xs-12 btn-group">
+                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/Loans.png' })();"><h5>1</h5></button>
+                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpense.png' })();"><h5>2</h5></button>
+                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpenseRecurring.png' })();"><h5>3</h5></button>
+                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpenseOptions.png' })();"><h5>4</h5></button>
+                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/ScheduleExpense.png' })();"><h5>5</h5></button>
+            </div>
+
+            <br />
+
+            <div>
+                <img class="col-xs-12 mx-5 shadow-lg p-3 mb-5 bg-white rounded" id="slideShow" src="images/Loans.png"><br />
+            </div>
+
+
+
+
+
+
+            <div class="row mt-5 next">
+                <a href="#courses" class="col">
+                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                       title="Courses"></i>
+                </a>
+            </div>
         </div>
-        <div class="row mt-5">
-            <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center"> Courses</h4>
+            </div>
+            <div class="row mx-auto mb-4">
+                <h5 class="display-5 mx-auto faded text-center"> Not as tasty as a main course, but close.</h5>
+            </div>
+            <div class="row w-100 justify-content-center my-3">
+                <div class="col text-center course">
+                    <h5> Information Systems Analysis and Design</h5>
+                </div>
+                <div class="col text-center course">
+                    <h5> Server-Side Web Application Development</h5>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center my-3">
+                <div class="col text-center course">
+                    <h5> Network Architectures</h5>
+                </div>
+                <div class="col text-center course">
+                    <h5> Client-Side Scripting</h5>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center my-3">
+                <div class="col text-center course">
+                    <h5> Component-Based Software Design</h5>
+                </div>
+                <div class="col text-center course">
+                    <h5> Database Management Systems</h5>
+                </div>
+            </div>
+            <div class="row mt-5 next">
+                <a href="#contact" class="col">
+                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                       title="Contact"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center"> Want To Talk?</h4>
+            </div>
+            <div class="row mx-auto">
+                <h5 class="display-5 mx-auto faded text-center"> I don't bite.</h5>
+            </div>
+            <div class="row my-4 contacticon">
+                <a href="mailto:jacob.enos@temple.edu" target="_blank" class="col mx-3">
+                    <i class="fas fa-envelope-square"
+                       data-toggle="tooltip" data-placement="top" title="Email"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jacob-enos-3bb49b174" target="_blank" class="col mx-3">
+                    <i class="fab fa-linkedin"
+                       data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
+                </a>
+                <a href="https://github.com/JacobEnos" target="_blank" class="col mx-3">
+                    <i class="fab fa-github-square"
+                       data-toggle="tooltip" data-placement="top" title="Github"></i>
+                </a>
+
+            </div>
+            <div class="row mt-5 pb-5">
+                <a href="#landing"> <button type="button" class="btn btn-outline"> Return to Top</button> </a>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 </body>
 
-</html>
+        </html >
