@@ -1,43 +1,40 @@
 ﻿<!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <!-- Bootstrap JS -->
     <script defer src="fontawesome/js/all.js"></script>
     <script defer src="fontawesome/js/all.min.js"></script>
-
     <script defer src="fontawesome/js/brands.js"></script>
     <script defer src="fontawesome/js/brands.min.js"></script>
-
     <script defer src="fontawesome/js/fontawesome.js"></script>
     <script defer src="fontawesome/js/fontawesome.min.js"></script>
-
     <script defer src="fontawesome/js/regular.js"></script>
     <script defer src="fontawesome/js/regular.min.js"></script>
-
     <script defer src="fontawesome/js/solid.js"></script>
     <script defer src="fontawesome/js/solid.min.js"></script>
-
     <script defer src="fontawesome/js/v4-shims.js"></script>
     <script defer src="fontawesome/js/v4-shims.min.js"></script>
 
-
     <title>Jacob Enos</title>
     <style>
+
         html,
         body {
             height: 100%;
             font-family: 'Merriweather Sans', sans-serif;
             scroll-behavior: smooth;
         }
+
+
+            body::-webkit-scrollbar {
+                display: none;
+            }
 
         .faded {
             opacity: 0.8
@@ -75,14 +72,12 @@
             }
 
         .course {
-            margin: 0 10px;
+            margin: 10px;
             padding: 20px;
             background-color: #eeeeee;
             border-radius: 5px;
-            display: flex;
+            text-align: center;
             justify-content: center;
-            flex-direction: column;
-            align-items: center;
         }
 
             .course h5 {
@@ -96,18 +91,48 @@
             .next a {
                 color: rgb(33, 37, 41);
             }
+
+
+
+        .model-box {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 66.6%; /* This is your aspect ratio */
+        }
+
+        }
+
+        .3d {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        .course h5 {
+            font-weight: normal;
+        }
     </style>
 
+    <link rel="stylesheet" href="iframeTools.css">
 
     <script src="fontawesome/js/custom.js"></script>
 </head>
 
-
-
 <body style="background-color:lightgray">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
     <style>
+
         .btn {
             font-family: 'Roboto Mono', monospace;
             font-size: 48px;
@@ -119,20 +144,19 @@
         }
     </style>
 
+    <!--NavBar-->
     <nav id="NavBar" class="navbar navbar-expand-lg navbar-dark text-white fixed-top border border-dark" style="background-color:darkgreen">
         <a class="navbar-brand" href="#landing"> Jacob Enos<span class="sr-only"> (current)</span> </a>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> </span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#projects"> Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-i tem">
                     <a class="nav-link" href="#courses"> Courses</a>
                 </li>
                 <li class="nav-item">
@@ -141,269 +165,572 @@
             </ul>
         </div>
     </nav>
-
     <script src="fontawesome/js/custom.js"></script>
 
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" style="background-color:lightgray" id="landing">
-        <br/>
-        <div class="jumbotron jumbotron-fluid text-center h1 rounded-pill" style="width:100%">
-            <div class="container-fluid">
-                Expected Graduation: <br />
-                <div class="row justify-content-center border rounded-pill h2" id="countdown"></div>
-            </div>
-        </div>
-        <br />
-        <br />
-        <br />
+    <!--Hello Wrapper-->
+    <div class="container-fluid landing d-flex justify-content-center flex-column align-items-center mb-5" style="background-position-x:center; background-attachment:fixed; background-size:cover; background-image:url('images/RoadMarkingTrees.jpg'); box-shadow: 0 5px 20px" id="landing">
 
+        <br /><br /><br />
+
+        <!--Hello World-->
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center"> Hello, I'm Jacob!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center text-white" style="text-shadow: 0px 0px 4px black;"> Hello World, I'm Jacob!</h4>
         </div>
+
+        <!--Hello World Caption-->
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">
+            <h5 class="display-5 mx-auto faded text-center text-white" style="text-shadow: 0px 0px 4px black;">
                 I'm an Information Science & Technology Student at Temple
                 University.
             </h5>
         </div>
-        <div class="row my-4">
-            <div class="col my-3">
-                <img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                     title="Python" / >
-            </div>
+
+        <!-- Descriptor Images -->
+        <div class="row text-center mx-auto my-4">
 
             <div class="col my-3">
-                <img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                     data-placement="top" title="TypeScript" / >
-            </div>
-
-            <div class="col my-3">
-                <img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                     title="C#" / >
+                <img src="images/aspnet.png" class="lang" data-toggle="tooltip" data-placement="top"
+                     style="background: rgb(255, 255, 255, .8); border-radius: 10px;" title="ASP.NET" />
             </div>
             <div class="col my-3">
-                <img src="images/MA.png" class="lang" data-toggle="tooltip" data-placement="top"
-                     title="Node.js" / >
+                <img src="images/python.png" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Python" />
             </div>
             <div class="col my-3">
-                <img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                     title="Java" / >
-            </div>
-
-            <div class="col my-3">
-                <img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                     title="ASP.NET" / >
+                <img src="images/Autopsy.png" class="lang" data-toggle="tooltip"
+                     data-placement="top" title="Autopsy" />
             </div>
             <div class="col my-3">
-                <img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                     title="Microsoft SQL Server" / >
+                <img src="images/csharp.png" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="C#" />
+            </div>
+            <div class="col my-3">
+                <img src="images/java.png" class="lang" data-toggle="tooltip" data-placement="top"
+                     style="background: rgb(255, 255, 255, .8); border-radius: 10px;" title="Java" />
+            </div>
+            <div class="col my-3">
+                <img src="images/Linux.png" class="lang" data-toggle="tooltip"
+                     data-placement="top" title="Linux" />
+            </div>
+            <div class="col my-3">
+                <img src="images/GitHub.png" class="lang" data-toggle="tooltip"
+                     data-placement="top" title="GitHub" />
+            </div>
+            <div class="col my-3">
+                <img src="images/Bootstrap.png" class="lang" data-toggle="tooltip"
+                     data-placement="top" title="Bootstrap" />
+            </div>
+            <div class="col my-3">
+                <img src="images/mssql.png" class="lang" data-toggle="tooltip" data-placement="top"
+                     style="background: rgb(255, 255, 255, .8); border-radius: 10px;" title="Microsoft SQL Server" />
             </div> <div class="col my-3"> </div>
+        </div>
 
-        </div>
-        <div class="row my-4">
-            <div class="col">
-                <a href="#projects"> <button type="button" class="btn btn-outline"> Projects</button> </a>
-            </div>
-            <div class="col">
-                <a href="#courses"> <button type="button" class="btn btn-outline"> Courses</button> </a>
-            </div>
-            <div class="col">
-                <a href="#contact"> <button type="button" class="btn btn-outline"> Contact</button> </a>
+
+        <!--Graduation Countdown-->
+        <div class="jumbotron jumbotron-fluid text-center h1 rounded-pill w-75" style="box-shadow: 0px 0px 5px 1px white;">
+            <div class="container-fluid">
+                Expected Graduation: <br />
+                <div class="justify-content-center h2" id="countdown"></div>
             </div>
         </div>
+
+        <!--Scroll Links-->
+        <div class="row my-4 justify-content-around">
+            <div class="col-md text-center my-1">
+                <a href="#projects"> <button type="button" class="btn btn-outline" style="background-color: lightgreen"> Projects</button> </a>
+            </div>
+            <div class="col-md text-center my-1">
+                <a href="#courses"> <button type="button" class="btn btn-outline" style="background-color: lightgreen"> Courses</button> </a>
+            </div>
+            <div class="col-md text-center my-1">
+                <a href="#contact"> <button type="button" class="btn btn-outline" style="background-color: lightgreen"> Contact</button> </a>
+            </div>
+        </div>
+
+        <!--Scroll to Projects-->
         <div class="row mt-5 next">
-            <a href="#projects" class="col">
+            <a href="#projects" class="col" style="text-shadow: 0px 0px 3px black;">
                 <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                   title="Projects"></i>
+                   title="Projects" style="color:white;"></i>
             </a>
         </div>
+    </div><!--End Hello Wrapper-->
 
-    </div>
+    <style>
+
+        #projects {
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
+
+    <!--Academic Projects-->
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
-        <div class="row mx-auto">
+
+        <div class="row mx-auto mt-2">
             <h4 class="display-4 font-weight-bold mx-auto text-center"> Academic Projects</h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center mb-4"> I've helped to build some cool things while at Temple.</h5>
         </div>
+
+        <br />
+
+        <!--Capstone Project-->
         <div class="row w-100">
             <h5> CST E-Course Evaluation Tracker</h5>
         </div>
         <div class="row w-100 mb-4">
             <p class="text-justify">
-                This is my Capstone project I am currently developing with a team of five other students. The E-Course transfer dashboard is a web based application available to transfer students
-                and faculty advisors that will provide fast and efficient transfer equivalency trackeing, monitoring, and automated email response for incoming transfer students.
+                This is my Capstone project I am currently developing with a virtual team of five other students. Together we have analyized out clients' needs, designed a solution, and developed the UI of the coming application. 
+                The E-Course transfer dashboard is a web based application available to transfer students
+                and faculty advisors that will provide fast and efficient transfer equivalency tracking, monitoring, and automated email response for incoming transfer students.
+                <br /><a href="My Book Public.pdf" target="_blank">Read "The Book"</a>
             </p>
         </div>
+
+        <!--Watershed Tracker-->
         <div class="row w-100">
             <h5> PA Watershed Level Tracker </h5>
         </div>
         <div class="row w-100 mb-4">
             <p class="text-justify">
-                This was another Capstone project I was able to contribute to in its final phases of development as part of Temple's Quality Assurance & Testing course. Me and a team of two other
-                students developed, executed, and logged many tests for another Capstone project. That project was a platform to enable community tracking and logging of local watershed levels.
+                This was another Capstone project I was able to contribute to in its final phases of development as part of Temple's Quality Assurance & Testing course. A team of two other
+                students and I developed, executed, and logged many tests for another team's Capstone project. That project was a platform to enable community tracking and logging of local watershed levels.
             </p>
         </div>
+
+        <!--Component Based Final-->
         <div class="row w-100">
-            <h5> Resaraunt Ordering Station Program </h5>
+            <h5> Wawa Ordering Station Program </h5>
         </div>
-        <div class="row w-100">
+        <div class="row w-100 mb-4">
             <p class="text-justify">
-                This was a final project for Temple's Component Based Software Development course. I developed a C# Windows application that, based on graphical user input, creates and logs
+                This was a final project for Temple's Component Based Software Development course. I developed a Windows application that, based on graphical user input, creates and logs
                 virtual orders at an American restaraunt. The Application allowed for various sizes, toppings, and combo deals, and pulled the associated prices from a database to build an order receipt.
             </p>
         </div>
 
-        <style>
-        #projects {
-            font-family: 'Roboto Mono', monospace;
-            
-        }
-        </style>
+        <!--Matrix Ops-->
+        <div class="row w-100">
+            <h5> Matrix Operations </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                
+                Windows Application that generates random matrices and performs basic mathmatical functions to them. The professor 
+                of this class was researching very low level algorithyms, I bet matrix arithmatic is a very common task for him.
+                <br/>
+                <a href="MatrixOps.exe" download>Download MatrixOps.exe</a>
+            </p>
+        </div>
 
-        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
-            <div class="row mx-auto">
-                <h4 class="display-4 font-weight-bold mx-auto text-center"> Personal Projects</h4>
-            </div>
-            <div class="row w-100">
-                <p /><h5> Water Feature Thing</h5>
-                <div class="progress">
-                    <div class="bar" style="width: 50%;"></div>
+        <!--Class Scores-->
+        <div class="row w-100">
+            <h5> Class Scores Tracker </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+
+                Windows Application that allows the user to log the scores of students and have a class average dynamically calcualted.
+                <br/>
+                <a href="Class Scores Tracker.exe" download>Download 'Class Scores Tracker.exe'</a>
+            </p>
+        </div>
+
+        <!--Copart-->
+        <div class="row w-100">
+            <h5> Car Auction Web App </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                For my Server-Side Web Development term project: One other student and I developed a basic clone of a website of our choosing.
+                My partner and I chose to create a website mimicing <a href="https://Copart.com" target="_blank">Copart</a>, a car auction site for salvage or "total-loss" vehicles.
+                Users can visit the site unidentified, or register and sign in. Unidentified users can only view Auctions. Registered users can additionally create Auctions, edit their Auctions,
+                Bid, and save profile information.
+                <br />
+                This project uses entirely public API calls to Stored Procedures to communicate with its Data Base.<br />
+                The source code is hosted in a public repository on<a style="color: darkgreen" href="https://github.com/wilson-diaz/CarAuctionSite" target="_blank"> <u>my partner's GitHub</u></a>.<br />
+                
+                <span class="text-danger">Live instance down for maintenance</span>
+                <!--
+                <a href="https://cis-iis2.temple.edu/Fall2020/CIS3342_tug99053/Project4/HomePage.aspx" target="_blank">Buy a (fake) Car!</a>
+                -->
+            </p>
+        </div>
+
+        <!--Yelp-->
+        <div class="row w-100">
+            <h5> Restaurant Review Web App </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                As a precursor to the above term project I individually created a basic Yelp clone. The website allows users to visit as
+                either an unidentified visitor or a registered Reviewer/Representative. Anyone can view the Restaurants and their Reviews,
+                as well as write Reviews and place Reservations.
+                Reviewers can additionally edit and delete their Reviews.
+                Representatives can add Restaurants to the site, claim unclaimed Restaurants to represent, edit or delete Reviews for Restaurants they represent,
+                and view Reservations for Restaurants they represent.
+                <br />
+                This project uses entirely Stored Procedures to communicate with its Data Base.<br />
+                <a href="https://cis-iis2.temple.edu/Fall2020/CIS3342_tug99053/Project3/Default.aspx" target="_blank">Check out some Restaurants!</a>
+            </p>
+        </div>
+
+        <!--Book Store-->
+        <div class="row w-100">
+            <h5>Book Store Web App</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                I made a basic book store web app. The context is to serve a student body's need for textbooks.
+                <br />
+                This project uses entirely SQL calls directly to its Data Base to obtain data.<br />
+                Data is displayed in a Dynamic GridView Display<br />
+                <a href="https://cis-iis2.temple.edu/Fall2020/CIS3342_tug99053/Project2/Default.aspx" target="_blank">Order a Book!</a>
+            </p>
+        </div>
+
+        <!--Client-Side Website-->
+        <div class="row w-100">
+            <h5> Client-Side Website </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                This website was developed as a learning tool for the Client-Side Scripting course, it uses entirely client-side processing to fetch and display its data,
+                as well as take some user input. The site includes an SPA using entirely JavaScript driven page events and data handling. I was not allowed to use any CSS frameworks in this website.  <br />
+                <a href="http://cis-linux2.temple.edu:8080/SP20_3344_tug99053/index.html#/" target="_blank">Here it is.</a>
+            </p>
+        </div>
+    </div><!--End Academic Projects-->
+
+
+
+    <!--Personal Projects-->
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
+
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center"> Personal Projects</h4>
+        </div>
+
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center mb-4"> I've also built some cool stuff myself...</h5>
+        </div>
+
+        <br />
+
+        <!--Loans-->
+        <div class="row w-100">
+            <h5> Loans.exe</h5>
+        </div>
+        <div class="w-100 mb-5">
+
+            <p class="text-justify mb-1">
+                A while ago I wanted a personal coding project to work on, one that would be useful to me in the end as well.
+                I ended up making this budgeting program. Given a certain salary, US state of residence, and a few other personal parameters
+                the program will calculate how long the loan/expense will take to pay off. The program acccounts for state and federal tax,
+                including adjusting for tax brackets, and allows users to add more secondary expenses to track similateously.
+                <a href="Budget Calculator.exe" download>Download Loans.exe</a>
+            </p>
+
+            <!--SlideShow Wrapper-->
+            <div class="col-12 text-center">
+
+                <!--SlideShow Buttons-->
+                <div class="btn-group my-2">
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/Loans.png' })();"><h5>1</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpense.png' })();"><h5>2</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpenseRecurring.png' })();"><h5>3</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpenseOptions.png' })();"><h5>4</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/ScheduleExpense.png' })();"><h5>5</h5></button>
+                </div>
+
+                <!--SlideShow Image-->
+                <div class="" style="object-fit:contain">
+                    <img style="max-height:50vh; max-width:100%" class="shadow-lg p-3 mb-5 bg-white rounded" id="slideShow" src="images/Loans.png"><br />
                 </div>
             </div>
+        </div>
 
 
+        <!--Hannah Adams-->
+        <div class="row w-100">
+            <h5> Hannah Adams Website</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                Some Tuesday night after my classes I was contacted by the President of the Hannah Adams Woman's Club.
+                I was asked if I would be interested in developing a website for the club since one did not exist and the COVID-19
+                pandemic had prevented the club from holding their usual events. That Friday I informed the President that a preliminary
+                site was runninng. The next day the President and I did a live walkthrough of the site. As of 10/24/2021 the site is
+                awaiting content from the President.<br />
+                This site is deployed through AWS.<br /><a target="_blank" href="http://www.hannahadamswc.org">Check out the Hannah Adams Woman's Club!</a>
+            </p>
+        </div>
 
-            <div class="row w-100 mb-4">
-                <p class="text-justify">
-                    Just a little woodworking/plumbing/electrical project I have, it's almost done. Water gets pumped
-                    from the lower resevoir to the upper resevoir, overflows, falls back to the bottom resevoir and repeats.
-                    A table top peice will be placed on top. The shaft poking out the top will slowly spin the table top.
+        <br />
+
+
+        <!--Helpers-->
+        <div class="row w-100">
+            <h5> Personal C# Class</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                Helpers.cs is a C# class consisting of a few functions that I used consistently in my academic assignments. The earlier, basic functions do things such as build SQLCommand objects from a Stored Procedure and optional parameters.
+                The more advanced functions will construct a generic List object from a DataSet by setting any properties that share a name with a column in the DataSet. In the case that the class's property names are fixed,
+                a 'translation' dictionary can be included that will tie a property with some name 'Key' to some column 'Value'.
+                <br />
+                <a target="_blank" href="Helpers.cs">View the Helpers.cs code</a><br/>
+                <a target="_blank" href="Connection.cs">Referenced DBConnect class</a>
+            </p>
+        </div>
+
+        <br/>
+
+
+        <!--Raspberry Pi-->
+        <div class="row w-100 mb-4">
+
+            <!--Text Wrapper-->
+            <div class="col-sm-6 p-0 my-auto">
+
+                <h5>Raspberry Pi Vesa Mount</h5>
+                <p>
+                    This is a mount that attaches a Raspberry Pi directly to the back of any Vesa compatable display. By powering the Pi through the display's
+                    onboard USB port a self contained computer can be assembled. The assembly can be easily carried/used anywhere an extension cord can reach. The intended use
+                    is to view manuals, schematics, or other research materials in the workshop.
                 </p>
-                <img class="mx-auto shadow-lg rounded" src="images/stand1Tiny.jpg">
             </div>
 
-            <p />
+            <!--SlideShow Wrapper-->
+            <div class="col-sm-6 text-center">
 
-            <div class="row w-100">
-                <h5> Loans.exe</h5>
-            </div>
-            <div class="row w-100 mb-4">
-                <p class="text-justify">
-                    A while ago I wanted a personal coding project to work on, one that would be useful to me in the end as well.
-                    I ended up making this budgeting program. Given a certain salary, US state of residence, and a few other personal parameters
-                    the program will calculate how long the loan/expense will take to pay off. The program acccounts for state and federal tax,
-                    including adjusting for tax brackets, and allows users to add more secondary expenses to track similateously.
-                </p>
+                <!--SlideShow Buttons-->
+                <div class="btn-group my-2">
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow2').src = 'images/RP4.jpg' })();"><h5>1</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow2').src = 'images/RP1.jpg' })();"><h5>2</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow2').src = 'images/RP3.jpg' })();"><h5>3</h5></button>
+                    <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow2').src = 'images/RP2.jpg' })();"><h5>4</h5></button>
+                </div>
 
-            </div>
-
-
-            <div class="col-xs-12 btn-group">
-                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/Loans.png' })();"><h5>1</h5></button>
-                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpense.png' })();"><h5>2</h5></button>
-                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpenseRecurring.png' })();"><h5>3</h5></button>
-                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/AddExpenseOptions.png' })();"><h5>4</h5></button>
-                <button class="btn btn-secondary" onclick="(function () {var ele = document.getElementById('slideShow').src = 'images/ScheduleExpense.png' })();"><h5>5</h5></button>
-            </div>
-
-            <br />
-
-            <div>
-                <img class="col-xs-12 mx-5 shadow-lg p-3 mb-5 bg-white rounded" id="slideShow" src="images/Loans.png"><br />
-            </div>
-
-
-
-
-
-
-            <div class="row mt-5 next">
-                <a href="#courses" class="col">
-                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                       title="Courses"></i>
-                </a>
+                <!--SlideShow Image-->
+                <div class="p-0" style="object-fit:contain">
+                    <img style="max-height:50vh; max-width:100%" class="shadow-lg p-3 mb-5 bg-white rounded" id="slideShow2" src="images/RP4.jpg"><br />
+                </div>
             </div>
         </div>
-        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
-            <div class="row mx-auto">
-                <h4 class="display-4 font-weight-bold mx-auto text-center"> Courses</h4>
-            </div>
-            <div class="row mx-auto mb-4">
-                <h5 class="display-5 mx-auto faded text-center"> Not as tasty as a main course, but close.</h5>
-            </div>
-            <div class="row w-100 justify-content-center my-3">
-                <div class="col text-center course">
-                    <h5> Information Systems Analysis and Design</h5>
-                </div>
-                <div class="col text-center course">
-                    <h5> Server-Side Web Application Development</h5>
-                </div>
-            </div>
-            <div class="row w-100 justify-content-center my-3">
-                <div class="col text-center course">
-                    <h5> Network Architectures</h5>
-                </div>
-                <div class="col text-center course">
-                    <h5> Client-Side Scripting</h5>
-                </div>
-            </div>
-            <div class="row w-100 justify-content-center my-3">
-                <div class="col text-center course">
-                    <h5> Component-Based Software Design</h5>
-                </div>
-                <div class="col text-center course">
-                    <h5> Database Management Systems</h5>
-                </div>
-            </div>
-            <div class="row mt-5 next">
-                <a href="#contact" class="col">
-                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                       title="Contact"></i>
-                </a>
-            </div>
-        </div>
-        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
-            <div class="row mx-auto">
-                <h4 class="display-4 font-weight-bold mx-auto text-center"> Want To Talk?</h4>
-            </div>
-            <div class="row mx-auto">
-                <h5 class="display-5 mx-auto faded text-center"> I don't bite.</h5>
-            </div>
-            <div class="row my-4 contacticon">
-                <a href="mailto:jacob.enos@temple.edu" target="_blank" class="col mx-3">
-                    <i class="fas fa-envelope-square"
-                       data-toggle="tooltip" data-placement="top" title="Email"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jacob-enos-3bb49b174" target="_blank" class="col mx-3">
-                    <i class="fab fa-linkedin"
-                       data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
-                </a>
-                <a href="https://github.com/JacobEnos" target="_blank" class="col mx-3">
-                    <i class="fab fa-github-square"
-                       data-toggle="tooltip" data-placement="top" title="Github"></i>
-                </a>
 
-            </div>
-            <div class="row mt-5 pb-5">
-                <a href="#landing"> <button type="button" class="btn btn-outline"> Return to Top</button> </a>
+
+        <br />
+
+
+        <!--Position Relative Playback-->
+        <div class="row w-100">
+            <h5>Mobile App Design</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                This is a personal project students designed in parallel to their Capstone client projects. My designed application, Position Relative Mobile Playback (PRMP) proposes to track a user's real world position and seamlessly transition
+                the playback of their mobile device between multiple speakers in a home or other area as the user moves around it. Like the CST E-Course Evaluation Tracker this application was planned extensively, up to and including a preliminary UI.
+                Unlike the CST E-Course Evaluation Tracker however, this documentation and planning was done entirely individually.
+            </p>
+        </div>
+
+        <br />
+
+
+        <!--Stand-->
+        <div class="row w-100">
+            <h5> Water Feature Thing</h5>
+        </div>
+        <div class="div w-100 mb-4">
+
+            <p>
+                Just a little woodworking / plumbing / electrical project I have, it's almost done. Water gets pumped
+                from the lower resevoir to the upper resevoir, overflows, falls back to the bottom resevoir and repeats.
+                A table top peice will be placed on top. The shaft poking out the top will slowly spin the table top.
+            </p>
+
+            <div class="row justify-content-around w-100">
+
+                <!--Stand Image-->
+                <div class="col-sm-6">
+                    <img class="shadow-lg rounded w-100" style="max-height:100%" src="images/stand1Tiny.jpg">
+                </div>
+
+                <div class="col-md-6 mt-4">
+
+                    <!--3D Viewers-->
+                    <div class="iframe-container shadow-lg my-2">
+                        <iframe src="https://3dwarehouse.sketchup.com/embed/f1fa7b34-8659-452e-8a87-f98fd6a68564" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                    <br />
+                    <div class="iframe-container shadow-lg my-2">
+                        <iframe src="https://3dwarehouse.sketchup.com/embed/b62454d1-754b-4344-a2a8-3877d63b7fd0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
+
+        <!--Scroll to Courses-->
+        <div class="row mt-5 next">
+            <a href="#courses" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Courses"></i>
+            </a>
+        </div>
+    </div><!--End Personal Projects-->
+
+
+
+    <!--Courses-->
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
+
+        <!--Courses Header-->
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center"> Courses</h4>
+        </div>
+
+        <!--Courses List-->
+        <div class="row justify-content-around w-100">
+
+            <div class="col-md-5 course">
+                <h5>Information Systems Analysis and Design</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Information Systems Implementation</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Digital Forensics</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Ethical Hacking & Intrusion Forensics</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Computer & Network Security</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Operating Systems & Networking</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Secure Software Development</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Quality Assurance & Testing</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Programming in Python</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Programming in Java</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Server-Side Web Application Development</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <div class="align-items-center"><h5>Client-Side Scripting</h5></div>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Component-Based Software Design</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Low-Level Programming in C</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Network Architectures</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Database Management Systems</h5>
+            </div>
+
+            <div class="col-md-5 course">
+                <h5>Data Structures</h5>
+            </div>
+
+
+
+        </div>
+
+        <a href="https://bulletin.temple.edu/courses/cis/" target="_blank">Temple Course Bulletin</a>
+
+        <!--Scroll to Contact-->
+        <div class="row mt-5 next">
+            <a href="#contact" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Contact"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!--Contact Me-->
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
+        
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center"> Want To Talk?</h4>
+        </div>
+        
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center"> I don't bite.</h5>
+        </div>
+
+        <!--Social Links-->
+        <div class="row my-4 contacticon">
+            <a href="mailto:jacob.enos@temple.edu" target="_blank" class="col-4 px-3">
+                <i class="fas fa-envelope-square"
+                   data-toggle="tooltip" data-placement="top" title="Email"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jacob-enos-3bb49b174" target="_blank" class="col-4 px-3">
+                <i class="fab fa-linkedin"
+                   data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
+            </a>
+            <a href="https://github.com/JacobEnos" target="_blank" class="col-4 px-3">
+                <i class="fab fa-github-square"
+                   data-toggle="tooltip" data-placement="top" title="Github"></i>
+            </a>
+        </div>
+
+        <!--Return To Top-->
+        <div class="row mt-5 p-3 pb-5">
+            <a href="#landing" /> <button type="button" class="btn btn-outline"> Return to Top</button> </a>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
-
-        </html >
+</html>
