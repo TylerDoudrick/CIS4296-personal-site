@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap  -->
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
     <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
+        fetch('https://randomuser.me/api/?inc=name,picture')
+            .then((response) => response.json())
+            .then(({ results }) => results[0])
+            .then(({ name, picture }) => {
+                document.querySelector('#name').innerText = name.first
+                document.querySelector(
+                    '.navbar-brand'
+                ).innerText = `${name.first} ${name.last}`
+                document.title = `${name.first} ${name.last} Personal Site`
+                document.querySelector('#profilepic').src = picture.large
+            })
     </script>
 
     <link href="styles/theme.css" rel="stylesheet" />
@@ -44,363 +38,379 @@
 
     <!-- Set Page Title Here -->
     <title></title>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
-      <div class="container-fluid p-2 px-lg-2 py-lg-0">
-        <!-- Set Name Here -->
-        <a class="navbar-brand" href="#"></a>
-        <button
-          class="navbar-toggler bg-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#projects"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#courses"
-                >Courses</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
+        <div class="container-fluid p-2 px-lg-2 py-lg-0">
+            <!-- Set Name Here -->
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler bg-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#student">JELLY GALAPO</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center pt-5"
-      id="home"
-    >
-      <div
-        class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5"
-      >
-      <!-- Set Photo Here -->
-        <img
-          style="height: 150px; width: 150px"
-          class="rounded-circle"
-          draggable="false"
-          id="profilepic"
-        />
-      </div>
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">
-          <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
-        </h4>
-      </div>
-      <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-center text-opacity-75 text-primary">
-          Information Science & Technology Student at Temple University
-        </h5>
-      </div>
-      <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
-        <div class="col text-center">
-          <img
-            src="images/python.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Python"
-          />
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center pt-5"
+         id="home">
+        <div class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5">
+            <!-- Set Photo Here -->
+            <img style="height: 150px; width: 150px"
+                 class="rounded-circle"
+                 draggable="false"
+                 id="profilepic" />
         </div>
-        <div class="col text-center">
-          <img
-            src="images/angular.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Angular"
-          />
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">
+                <!-- Set Name Here -->
+                Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
+                <span id="name"></span>!
+            </h4>
         </div>
-        <div class="col text-center">
-          <img
-            src="images/typescript.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="TypeScript"
-          />
+        <div class="row mx-auto">
+            <h5 class="h5 mx-auto text-center text-opacity-75 text-primary">
+                Information Science & Technology Student at Temple University
+            </h5>
+        </div>
+        <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
+            <div class="col text-center">
+                <img src="images/python.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="Python" />
+            </div>
+            <div class="col text-center">
+                <img src="images/angular.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="Angular" />
+            </div>
+            <div class="col text-center">
+                <img src="images/typescript.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="TypeScript" />
+            </div>
+
+            <div class="col text-center">
+                <img src="images/csharp.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="C#" />
+            </div>
+            <div class="col text-center">
+                <img src="images/node.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="Node.js" />
+            </div>
+            <div class="col text-center">
+                <img src="images/java.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="Java" />
+            </div>
+
+            <div class="col text-center">
+                <img src="images/aspnet.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="ASP.NET" />
+            </div>
+            <div class="col text-center">
+                <img src="images/mssql.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="Microsoft SQL Server" />
+            </div>
+            <div class="col text-center">
+                <img src="images/mongodb.jpg"
+                     data-bs-toggle="tooltip"
+                     data-placement="top"
+                     title="MongoDB" />
+            </div>
         </div>
 
-        <div class="col text-center">
-          <img
-            src="images/csharp.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="C#"
-          />
+        <div class="row mt-3 mt-lg-5 next">
+            <a href="#projects" class="col">
+                <iconify-icon icon="material-symbols:arrow-circle-down"
+                              class="arrow-next"></iconify-icon>
+            </a>
         </div>
-        <div class="col text-center">
-          <img
-            src="images/node.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Node.js"
-          />
+    </div>
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+         id="projects">
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
         </div>
-        <div class="col text-center">
-          <img
-            src="images/java.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Java"
-          />
+        <div class="row mx-auto">
+            <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
+                I've worked on some neat things.
+            </h5>
+        </div>
+        <div class="row w-100">
+            <h5>Inspiro for Esperanza</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
+                nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
+                quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
+                tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
+                non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
+                tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
+                Vestibulum at porta lectus, sed faucibus libero.
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>Work From Home Pinterest</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
+                ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
+                Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
+                imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
+                dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
+                varius urna dictum porta.
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>Query Dating Site</h5>
+        </div>
+        <div class="row w-100">
+            <p class="text-justify">
+                Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
+                odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
+                nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
+                gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
+                sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
+                maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
+                porta in in nibh. Phasellus lobortis nibh est, id pretium orci
+                efficitur at.
+            </p>
+        </div>
+        <div class="row mt-3 next">
+            <a href="#courses" class="col">
+                <iconify-icon icon="material-symbols:arrow-circle-down"
+                              class="arrow-next"></iconify-icon>
+            </a>
+        </div>
+    </div>
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+         id="courses">
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">Courses</h4>
+        </div>
+        <div class="row mx-auto mb-4">
+            <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
+                Not as tasty as a main course, but close.
+            </h5>
+        </div>
+        <div class="row w-100 justify-content-center my-3 gap-4">
+            <a class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
+               type="button"
+               href="https://bulletin.temple.edu/search/?P=CIS%204296"
+               target="_blank">
+                <h5 class="m-0">Information Systems Analysis and Design</h5>
+            </a>
+            <a class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
+               type="button"
+               href="https://bulletin.temple.edu/search/?P=CIS%203342"
+               target="_blank">
+                <h5 class="m-0">Server-Side Web Application Development</h5>
+            </a>
+            <a class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
+               type="button"
+               href="https://bulletin.temple.edu/search/?P=CIS%203329"
+               target="_blank">
+                <h5 class="m-0">Network Architectures</h5>
+            </a>
+            <a class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
+               type="button"
+               href="https://bulletin.temple.edu/search/?P=CIS%203344"
+               target="_blank">
+                <h5 class="m-0">Client-Side Scripting</h5>
+            </a>
+            <a class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
+               type="button"
+               href="https://bulletin.temple.edu/search/?P=CIS%203309"
+               target="_blank">
+                <h5 class="m-0">Component-Based Software Design</h5>
+            </a>
+            <a class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
+               type="button"
+               href="https://bulletin.temple.edu/search/?P=CIS%202109"
+               target="_blank">
+                <h5 class="m-0">Database Management Systems</h5>
+            </a>
+            <div class="row mt-5 next justify-content-center align-items-center">
+                <a href="#contact" class="text-center">
+                    <iconify-icon icon="material-symbols:arrow-circle-down"
+                                  class="arrow-next"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+         id="contact">
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">
+                Feel Like Reaching Out?
+            </h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
+                I don't bite.
+            </h5>
+        </div>
+        <div class="row my-4 contact-wrapper gap-3">
+            <a href="mailto:johndoe@gmail.com" class="col text-black">
+                <iconify-icon icon="logos:google-gmail"
+                              width="60"
+                              height="60"
+                              data-bs-toggle="tooltip"
+                              data-placement="top"
+                              title="Email"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/johndoe/" class="col">
+                <iconify-icon icon="skill-icons:linkedin"
+                              width="60"
+                              height="60"
+                              data-bs-toggle="tooltip"
+                              data-placement="top"
+                              title="LinkedIn"></iconify-icon>
+            </a>
+            <a href="https://github.com/johndoe" class="col">
+                <iconify-icon icon="skill-icons:github-dark"
+                              width="60"
+                              height="60"
+                              data-bs-toggle="tooltip"
+                              data-placement="top"
+                              title="GitHub"></iconify-icon>
+            </a>
+        </div>
+        <div class="row mt-5">
+            <div>
+                <a href="#home">
+                    <button type="button" class="btn btn-primary">
+                        Return to Top<iconify-icon icon="material-symbols:arrow-circle-up"
+                                                   class="fs-5"
+                                                   style="margin-bottom: -3.5px; margin-left: 5px"></iconify-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section text-bg-primary p-3  min-vh-100 d-flex justify-content-center flex-column align-items-center"
+         id="student">
+        <div class="row mx-auto">
+            <h4 class="h1 w-100 fs-1 text-black-50 font-weight-bold mx-auto text-center shadow p-3 mb-5 bg-body rounded" style="font-family: 'Franklin Gothic Book'">
+                I'm Jelly!
+            </h4>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        About Me
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>I have an identical twin! I love her to death and that's all I need to say ;) </strong> I also love to animate and code and go to the gym and cook and bake and eat! I love socializing when I'm surrounded by good people, but can't stand it when I'm around not very good people LOL
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Work Experience
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>I love to work when I love the work I do.</strong>I've spent my years at Temple TAing for Discrete Mathematics, Network Architectures, and Component Based, as well as have had two internships- both software engineering at WebstaurantStore and TD Bank.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Family
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>There are 8 of us at home :D </strong>Big families are really the best because I constantly have someone to go to when I'm feeling down, happy, sad, angry, ANY OF THE ABOVE! If I need someone to go with somewhere, I'll just call someone to tag along. I really do love all 5 of my siblings (and my parents :P), but my twin is my everything.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg" class="card-img-top" alt="Image Description">
+                        <div class="card-body">
+                            <p class="card-text text-black-50 text-center">My favorite color of all times ;)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/7693917/pexels-photo-7693917.jpeg" class="card-img-top" alt="Image Description">
+                        <div class="card-body">
+                            <p class="card-text text-black-50 text-center">Bread</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/12740189/pexels-photo-12740189.jpeg" class="card-img-top" alt="Image Description">
+                        <div class="card-body">
+                            <p class="card-text text-black-50 text-center">Me and Bae (i.e. my twinny ehehehehehe)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col text-center">
-          <img
-            src="images/aspnet.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="ASP.NET"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/mssql.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Microsoft SQL Server"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/mongodb.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="MongoDB"
-          />
-        </div>
-      </div>
-
-      <div class="row mt-3 mt-lg-5 next">
-        <a href="#projects" class="col"
-          ><iconify-icon
-            icon="material-symbols:arrow-circle-down"
-            class="arrow-next"
-          ></iconify-icon
-        ></a>
-      </div>
-    </div>
-    <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
-      id="projects"
-    >
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
-      </div>
-      <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
-          I've worked on some neat things.
-        </h5>
-      </div>
-      <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
-      </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
-        </p>
-      </div>
-      <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
-      </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
-        </p>
-      </div>
-      <div class="row w-100">
-        <h5>Query Dating Site</h5>
-      </div>
-      <div class="row w-100">
-        <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
-        </p>
-      </div>
-      <div class="row mt-3 next">
-        <a href="#courses" class="col"
-          ><iconify-icon
-            icon="material-symbols:arrow-circle-down"
-            class="arrow-next"
-          ></iconify-icon
-        ></a>
-      </div>
-    </div>
-    <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
-      id="courses"
-    >
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Courses</h4>
-      </div>
-      <div class="row mx-auto mb-4">
-        <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
-          Not as tasty as a main course, but close.
-        </h5>
-      </div>
-      <div class="row w-100 justify-content-center my-3 gap-4">
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%204296"
-          target="_blank"
-        >
-          <h5 class="m-0">Information Systems Analysis and Design</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203342"
-          target="_blank"
-        >
-          <h5 class="m-0">Server-Side Web Application Development</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203329"
-          target="_blank"
-        >
-          <h5 class="m-0">Network Architectures</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203344"
-          target="_blank"
-        >
-          <h5 class="m-0">Client-Side Scripting</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203309"
-          target="_blank"
-        >
-          <h5 class="m-0">Component-Based Software Design</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%202109"
-          target="_blank"
-        >
-          <h5 class="m-0">Database Management Systems</h5>
-        </a>
-        <div class="row mt-5 next justify-content-center align-items-center">
-          <a href="#contact" class="text-center"
-            ><iconify-icon
-              icon="material-symbols:arrow-circle-down"
-              class="arrow-next"
-            ></iconify-icon
-          ></a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
-      id="contact"
-    >
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">
-          Feel Like Reaching Out?
-        </h4>
-      </div>
-      <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
-          I don't bite.
-        </h5>
-      </div>
-      <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
-          <iconify-icon
-            icon="logos:google-gmail"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Email"
-          ></iconify-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
-          ><iconify-icon
-            icon="skill-icons:linkedin"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="LinkedIn"
-          ></iconify-icon>
-        </a>
-        <a href="https://github.com/johndoe" class="col"
-          ><iconify-icon
-            icon="skill-icons:github-dark"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="GitHub"
-          ></iconify-icon>
-        </a>
-      </div>
-      <div class="row mt-5">
-        <div>
-          <a href="#home">
-            <button type="button" class="btn btn-primary">
-              Return to Top<iconify-icon
-                icon="material-symbols:arrow-circle-up"
-                class="fs-5"
-                style="margin-bottom: -3.5px; margin-left: 5px"
-              ></iconify-icon></button
-          ></a>
-        </div>
-      </div>
     </div>
 
     <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      )
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) =>
-          new bootstrap.Tooltip(tooltipTriggerEl, { delay: { hide: 50 } })
-      )
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        )
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) =>
+                new bootstrap.Tooltip(tooltipTriggerEl, { delay: { hide: 50 } })
+        )
     </script>
-  </body>
+</body>
 </html>
